@@ -5,5 +5,8 @@ package ua.kpi.entities;
  *
  * @author Evgeniy
  */
-public class Group {
+public enum Group {
+    FRIENDS,
+    FAMILY,
+    WORK
 }
