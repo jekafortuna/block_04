@@ -12,7 +12,19 @@ public class Address {
     private String buildNumber;
     private String flatNumber;
 
+    public String getPostFormatAddress(){
+        StringBuilder sb = new StringBuilder(this.index);
+        sb.append(" ");
+        sb.append(this.city);
+        sb.append(" ");
+        sb.append(this.street);
+        sb.append(" ");
+        sb.append(this.buildNumber);
+        sb.append(" ");
+        sb.append(this.flatNumber);
 
+        return sb.toString();
+    }
 
     public String getIndex() {
         return index;
