@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Created on 11. November. 16.
+ * Model class
  *
  * @author Evgeniy
  */

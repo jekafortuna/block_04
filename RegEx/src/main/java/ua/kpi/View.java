@@ -17,7 +17,7 @@ public class View {
     public static final String HOME_PHONE = "Input number of the home phone '+38(044)000-00-00': ";
     public static final String MOB_PHONE = "Input number of the mobile phone '+38(050)000-00-00': ";
     public static final String EMAIL = "Input email: ";
-    public static final String SKYPE = "Input skype name: ";
+    public static final String SKYPE = "Input skype login: ";
     public static final String ADDRESS_INDEX = "Input index (5-digit number): ";
     public static final String ADDRESS_STREET = "Input street: ";
     public static final String ADDRESS_CITY = "Input city: ";

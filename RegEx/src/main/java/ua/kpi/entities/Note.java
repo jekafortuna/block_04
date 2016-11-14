@@ -9,7 +9,7 @@ public class Note {
     private String firstName;
     private String secondName;
     private String middleName;
-    private String nuckName;
+    private String nickName;
     private String commentary;
     private String group;
     private String homePhone;
@@ -23,13 +23,13 @@ public class Note {
     public Note() {}
 
     public Note(String firstName, String secondName, String middleName,
-                String nuckName, String commentary, String group, String homePhone,
+                String nickName, String commentary, String group, String homePhone,
                 String mobilePhone, String email, String skypeLogin, Address address,
                 String inputDate, String updateDate) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.middleName = middleName;
-        this.nuckName = nuckName;
+        this.nickName = nickName;
         this.commentary = commentary;
         this.group = group;
         this.homePhone = homePhone;
@@ -76,12 +76,12 @@ public class Note {
         this.middleName = middleName;
     }
 
-    public String getNuckName() {
-        return nuckName;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setNuckName(String nuckName) {
-        this.nuckName = nuckName;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getCommentary() {
@@ -162,7 +162,7 @@ public class Note {
                 "firstName = '" + firstName + '\'' +
                 ", secondName = '" + secondName + '\'' +
                 ", middleName = '" + middleName + '\'' +
-                ", nuckName = '" + nuckName + '\'' +
+                ", nickName = '" + nickName + '\'' +
                 ", commentary = '" + commentary + '\'' +
                 ", group = '" + group + '\'' +
                 ", homePhone = '" + homePhone + '\'' +
