@@ -1,5 +1,9 @@
 package ua.kpi.entities;
 
+import ua.kpi.Controller;
+
+import java.util.Date;
+
 /**
  * Created on 11. November. 16.
  *
@@ -11,7 +15,7 @@ public class Note {
     private String middleName;
     private String nickName;
     private String commentary;
-    private String group;
+    private Group group;
     private String homePhone;
     private String mobilePhone;
     private String email;
@@ -23,7 +27,7 @@ public class Note {
     public Note() {}
 
     public Note(String firstName, String secondName, String middleName,
-                String nickName, String commentary, String group, String homePhone,
+                String nickName, String commentary, Group group, String homePhone,
                 String mobilePhone, String email, String skypeLogin, Address address,
                 String inputDate, String updateDate) {
         this.firstName = firstName;
@@ -58,6 +62,7 @@ public class Note {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getSecondName() {
@@ -66,6 +71,7 @@ public class Note {
 
     public void setSecondName(String secondName) {
         this.secondName = secondName;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getMiddleName() {
@@ -74,6 +80,7 @@ public class Note {
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getNickName() {
@@ -82,6 +89,7 @@ public class Note {
 
     public void setNickName(String nickName) {
         this.nickName = nickName;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getCommentary() {
@@ -90,14 +98,16 @@ public class Note {
 
     public void setCommentary(String commentary) {
         this.commentary = commentary;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
-    public String getGroup() {
+    public Group getGroup() {
         return group;
     }
 
-    public void setGroup(String group) {
+    public void setGroup(Group group) {
         this.group = group;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getHomePhone() {
@@ -106,6 +116,7 @@ public class Note {
 
     public void setHomePhone(String homePhone) {
         this.homePhone = homePhone;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getMobilePhone() {
@@ -114,6 +125,7 @@ public class Note {
 
     public void setMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getEmail() {
@@ -122,6 +134,7 @@ public class Note {
 
     public void setEmail(String email) {
         this.email = email;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getSkypeLogin() {
@@ -130,6 +143,7 @@ public class Note {
 
     public void setSkypeLogin(String skypeLogin) {
         this.skypeLogin = skypeLogin;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public Address getAddress() {
@@ -138,6 +152,7 @@ public class Note {
 
     public void setAddress(Address address) {
         this.address = address;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getInputDate() {
@@ -146,6 +161,7 @@ public class Note {
 
     public void setInputDate(String inputDate) {
         this.inputDate = inputDate;
+        this.setUpdateDate(Controller.DATE_FORMAT.format(new Date()));
     }
 
     public String getUpdateDate() {
