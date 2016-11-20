@@ -10,20 +10,75 @@ import java.util.Date;
  * @author Evgeniy
  */
 public class Note {
+
+    /**
+     * Name of abonent
+     */
     private String firstName;
+
+    /**
+     * Surname of abonent
+     */
     private String secondName;
+
+    /**
+     * Middle name (Father's name) if needed
+     */
     private String middleName;
+
+    /**
+     * Nickname of abonent
+     */
     private String nickName;
+
+    /**
+     * Commentary to note (if needed)
+     */
     private String commentary;
+
+    /**
+     * Group which this abonent belongs to (FRINDS, FAMILY, WORK)
+     */
     private Group group;
+
+    /**
+     * Homephone of abonent (+38(044)000-00-00)
+     */
     private String homePhone;
+
+    /**
+     * Mobilephone of abonent (+38(050)000-00-00)
+     */
     private String mobilePhone;
+
+    /**
+     * E-mail address of abonent
+     */
     private String email;
+
+    /**
+     * Login of skype account of abonent
+     */
     private String skypeLogin;
+
+    /**
+     * Address of abonent
+     */
     private Address address;
+
+    /**
+     * Date of first input of data
+     */
     private String inputDate;
+
+    /**
+     * Input of updating user's information
+     */
     private String updateDate;
 
+    /**
+     * Default constructor
+     */
     public Note() {}
 
     public Note(String firstName, String secondName, String middleName,
@@ -45,6 +100,10 @@ public class Note {
         this.updateDate = updateDate;
     }
 
+    /**
+     * Method returns surname with initials
+     * @return simple introduction of name
+     */
     public String getSimpleName(){
         StringBuilder sb = new StringBuilder(this.secondName);
         sb.append(" ");

@@ -60,6 +60,13 @@ public class Controller {
         view.printMessage(notebook.getNotesList());
     }
 
+    /**
+     * Method checks input information for validation
+     * @param sc
+     * @param message
+     * @param regexp
+     * @return input message
+     */
     public String inputWithValidation(Scanner sc, String message, String regexp) {
         Pattern pattern = Pattern.compile(regexp);
         Matcher matcher;
@@ -76,6 +83,11 @@ public class Controller {
         return input;
     }
 
+    /**
+     * Method checks input address for validation
+     * @param sc
+     * @return input address
+     */
     public Address inputAddressWithValidation(Scanner sc) {
         Address address = new Address();
         address.setIndex(inputWithValidation(sc, view.ADDRESS_INDEX, INDEX_REGEX));
